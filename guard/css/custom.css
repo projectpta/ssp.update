@@ -1,0 +1,20 @@
+option[type="option"]{
+    margin: 0px 20px 10px 0px;
+}
+
+.input_option
+{
+    margin-right:1000px;
+    color: crimson ;
+    background-color: darkblue
+}
+body{
+    font-size: 15px;
+    font-family: "Times New Roman",serif,cursive;
+}
+
+.content{
+     font-size: 15px;
+    font-family: "Times New Roman",serif,cursive;
+    
+}
