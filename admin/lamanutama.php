@@ -13,9 +13,76 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+<style>
+    
+.btn {
+  border: 10px solid black;
+  background-color:white;
+  color: black;
+  padding: 40px 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color:lightgrey;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.info:hover {
+  background: lightgrey;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: lightgrey;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: lightgrey;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: lightgrey;
+}
+    
+</style>
+        
 	</head>
 	
 	
@@ -28,9 +95,8 @@
     </div>
     
       <ul class="nav navbar-nav">
-      <li><a href="semakanrumah.php">SEMAKAN RUMAH</a></li>
-      <li><a href="edit.php">TAMBAH PENDUDUK</a></li>
-      <li><a href="addguard.php">ADUAN</a></li>
+     
+      <li><a href="addguard.php">CARIAN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li><a href="../index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
@@ -39,44 +105,57 @@
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="button ">Submit</button>
     </form>
     </div>
     </nav>
+     
     
-    
-    
-    
-    
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<h1>SELAMAT DATANG KE SISTEM SEMAKAN PENDUDUK</h1>
-					<p> Terima kasih atas sokongan anda terhadap sistem  ini. Sememangnya menjadi tanggungjawab JPKKB untuk memberikan kepuasan kepada semua pelanggan dan pengunjung sistem ini. Sistem ini sentiasa dikemaskini dan terkini (sekiranya terdapat pembaharuan).<br /></p>
-				</div>
-				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
-			</section>
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>SEMAKAN RUMAH</h1>
+			</div>    
 
-		<!-- Highlights -->
-
-		<!-- CTA -->
-
-		<!-- Testimonials -->
-			<section class="wrapper">
-				<div class="inner">
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
+		<!-- Main -->
+		
+			<section id="main" class="wrapper">
 				<div class="inner">
 					<div class="content">
-					</div>
-					<div class="copyright">
-						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
-					</div>
-				</div>
-			</footer>
+                    <div class="container">
+  <h2>SEMAKAN DATA PENDUDUK</h2>
+  <p>Semakan data penduduk bagi</p>
+    <button class="btn success" onClick="location.href='aras1_2_3.php'">BLOK A</button>
+    <button class="btn info" onClick="location.href='blokbaras1_2_3.php'">BLOK B</button>
+    <br>
+    <br>
+    <button class="btn warning" onClick="location.href='blokcaras1_2_3.php'">BLOK C</button>
+    <button class="btn danger" onClick="location.href='blockd1_2_3.php'">BLOK D</button>
+
+    
+    
+    
+    
+    </div>
+  </div>
+                   
+                   
+                           
+                   
+                       
+                   
+                   
+                   
+                    </div>
+							
+                   </section>
+
+								<!-- Text -->
+
+
+        <!-- Lists -->
+			
+
+								<!-- 
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

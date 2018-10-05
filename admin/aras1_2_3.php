@@ -88,18 +88,13 @@
 <button class="accordion">ARAS 2</button>
 <div class="panel">
 
-<h2>
-  
-  <button>B-A-2-1</button>
-  <button>B-A-2-2</button>
-  <button>B-A-2-3</button>
-  <button>B-A-2-4</button>
-  <button>B-A-2-5</button>
-  <button>B-A-2-6</button>
-  <button>B-A-2-7</button>
-  <button>B-A-2-8</button>
-  
-</h2>
+<h2> <thead>
+            <tr>
+                <th>NAMA</th>
+                <th>IC</th>
+                <th>SUNTING</th>
+            </tr>
+        </thead> </h2>
 </div>
 
 <br>

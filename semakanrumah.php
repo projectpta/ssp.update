@@ -91,16 +91,15 @@
     <nav class="navbar navbar-default">
     <div class="container-fluid">
     <div class="navbar-header">
-     <a class="navbar-brand" href="lamanutama.php">LAMAN UTAMA</a>
+     <a class="navbar-brand" href="semakanrumah.php">LAMAN UTAMA</a>
     </div>
     
            <ul class="nav navbar-nav">
-      <li><a href="semakanrumah.php">SEMAKAN RUMAH</a></li>
       <li><a href="addguard.php">SUNTING PENGGUNA</a></li>
-      <li><a href="addguard.php">ADUAN</a></li>
+      <li><a href="aduan.php">ADUAN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="../index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
     </ul>
      <form class="navbar-form navbar-right" action="/action_page.php">
       <div class="form-group">
@@ -125,7 +124,7 @@
                     <div class="container">
   <h2>SEMAKAN DATA PENDUDUK</h2>
   <p>Semakan data penduduk bagi</p>
-    <button class="btn success" onClick="location.href='aras1_2_3.php'">BLOK A</button>
+    <button class="btn success" onClick="location.href='ba11.php'">BLOK A</button>
     <button class="btn info" onClick="location.href='blokbaras1_2_3.php'">BLOK B</button>
     <br>
     <br>

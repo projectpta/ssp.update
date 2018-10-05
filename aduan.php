@@ -1,9 +1,6 @@
-<?php
-include ('postdata2.php');
-?>
 <html>
-	<head>
-		<title>Generic Page - Industrious by TEMPLATED</title>
+    <head>
+    <title>Generic Page - Industrious by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -12,9 +9,9 @@ include ('postdata2.php');
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-	
-	
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
 <body class="is-preload">
 
     <nav class="navbar navbar-default">
@@ -24,7 +21,8 @@ include ('postdata2.php');
     </div>
     
       <ul class="nav navbar-nav">
-      <li><a href="pelawat.php">PELAWAT</a></li>
+      <li><a href="addguard.php">SUNTING PENGGUNA</a></li>
+      <li><a href="aduan.php">ADUAN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li><a href="../index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>

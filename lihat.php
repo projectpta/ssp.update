@@ -46,12 +46,13 @@
    <nav class="navbar navbar-default">
     <div class="container-fluid">
     <div class="navbar-header">
-     <a class="navbar-brand" href="semakanrumah.php">LAMAN UTAMA</a>
+     <a class="navbar-brand" href="lamanutama.php">LAMAN UTAMA</a>
     </div>
     
       <ul class="nav navbar-nav">
+      <li><a href="semakanrumah.php">SEMAKAN RUMAH</a></li>
       <li><a href="addguard.php">SUNTING PENGGUNA</a></li>
-      <li><a href="aduan.php">ADUAN</a></li>
+      <li><a href="addguard.php">ADUAN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
@@ -102,7 +103,7 @@
 <br>
 <h2>KERANI</h2>
 <div class="manageMember">
-    <a href="create1.php"><button type="button">Add Member</button></a>
+    <a href="addguard.php"><button type="button">KEMBALI</button></a>
     <table border="1" cellspacing="0" cellpadding="0">
        
            <h2> <thead>

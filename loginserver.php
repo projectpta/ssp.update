@@ -19,7 +19,7 @@ if(isset($_POST['login']))
             {
                 
                 $_SESSION['username'] = $username;
-                header('location: lamanutama.php');
+                header('location: semakanrumah.php');
                 
             }
             
@@ -44,7 +44,7 @@ if(isset($_POST['login']))
             {
                 
                 $_SESSION['username'] = $username;
-                header('location: guard/lamanutama.php');
+                header('location: guard/semakanrumah.php');
                 
             }
             
@@ -64,7 +64,7 @@ if(isset($_POST['login']))
             {
                 
                 $_SESSION['username'] = $username;
-                header('location: admin/lamanutama.php');
+                header('location: admin/semakanrumah.php');
                 
             }
             

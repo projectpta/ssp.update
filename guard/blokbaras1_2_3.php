@@ -1,11 +1,8 @@
-<!DOCTYPE HTML>
-<!--
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<?php require_once 'db.php'; ?>
+<!DOCTYPE html>
 <html>
-	<head>
+<head>
+
 		<title>Generic Page - Industrious by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -13,52 +10,24 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
-.accordion {
-    background-color: burlywood;
-    color: rebeccapurple;
-    cursor: pointer;
-    padding: 30px;
-    width: 100%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 20px;
-    transition: 0.4s;
-    margin:0 auto
-}
-
-.active, .accordion:hover {
-    background-color: gainsboro; 
-}
-
-.panel {
-    padding: 0 50px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-}
-</style>
-	</head>
-	
-	
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body class="is-preload">
 
     <nav class="navbar navbar-default">
     <div class="container-fluid">
     <div class="navbar-header">
-     <a class="navbar-brand" href="lamanutama.php">LAMAN UTAMA</a>
+     <a class="navbar-brand" href="semakanrumah.php">LAMAN UTAMA</a>
     </div>
     
       <ul class="nav navbar-nav">
-      <li><a href="semakanrumah.php">SEMAKAN RUMAH</a></li>
-      <li><a href="pelawat.php">PELAWAT</a></li>
+      <li><a href="addguard.php">SUNTING PENGGUNA</a></li>
+      <li><a href="aduan.php">ADUAN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      <li><a href="../index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
     </ul>
      <form class="navbar-form navbar-right" action="/action_page.php">
       <div class="form-group">
@@ -68,79 +37,53 @@
     </form>
     </div>
     </nav>
+<h1> ARAS 1</h1>
+ <br>
+  <div class="manageMember">
+    <a href="create.php"><button type="button">ARAS 2</button></a>
+    <a href="create.php"><button type="button">ARAS 3</button></a>
+    <a href="create.php"><button type="button">ARAS 4</button></a>
+    <a href="create.php"><button type="button">ARAS 5</button></a>
+    <a href="create.php"><button type="button">ARAS 6</button></a>
+    <br>
+    <br>
+    <a href="create.php"><button type="button">TAMBAH</button></a>
     
-   
-  <h2></h2>
+    <table border="1" cellspacing="0" cellpadding="0">
+           <h2> <thead>
+            <tr>
+                <th>NAMA</th>
+                <th>NO TEL</th>
+                <th>SUNTING</th>
+            </tr>
+        </thead> </h2>
+        <tbody>
+            
+               <?php
+            $sql = "SELECT * FROM butiran WHERE id = 1";
+            $result = $connection->query($sql);
+ 
+            if($result->num_rows == 1) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                        <td>".$row['nama']."</td>
+                        <td>".$row['no_tel']."</td>
+                        <td>
+                            <a href='edit.php?id=".$row['id']."'><button type='btn'>KEMASKINI</button></a>
+                            <a href='remove.php?id=".$row['id']."'><button type='button'>PADAM</button></a>
+                            <a href='lihat.php?id=".$row['id']."'><button type='button'>SEMAK</button></a>
+                        </td>
+                    </tr>";
+                }
+            } else {
+                echo "<tr><td colspan='5'><center>No Data Avaliable</center></td></tr>";
+            }
+            ?>
 
-<button class="accordion">ARAS 1</button>
-<div class="panel">
-<h2>
-  
-  <button>B-B-1-1</button>
- <button>B-B-1-2</button>
-  <button>B-B-1-3</button>
-  <button>B-B-1-4</button>
-  <button>B-B-1-5</button>
-   <button>B-B-1-6</button>
-    <button>B-B-1-7</button>
-     <button>B-B-1-8</button>
-  
-</h2>
+        </tbody>
+    </table>
 </div>
-
-
-<button class="accordion">ARAS 2</button>
-<div class="panel">
-
-<h2>
-  
-  <button>B-B-2-1</button>
- <button>B-B-2-2</button>
-  <button>B-B-2-3</button>
-  <button>B-B-2-4</button>
-  <button>B-B-2-5</button>
-  <button>B-B-2-6</button>
-  <button>B-B-2-7</button>
-  <button>B-B-2-8</button>
-  
-</h2>
-  
-  
-</div>
-
-<button class="accordion">ARAS 3</button>
-<div class="panel">
-  <h2>
-  
-  <button>B-B-3-1</button>
- <button>B-B-3-2</button>
-  <button>B-B-3-3</button>
-  <button>B-B-3-4</button>
-  <button>B-B-3-5</button>
-  <button>B-B-3-6</button>
-  <button>B-B-3-7</button>
-    <button>B-B-3-8</button>
-
-  
-</h2>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-</script>
 
 </body>
 </html>
+   

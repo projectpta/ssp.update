@@ -15,6 +15,74 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+<style>
+    
+.btn {
+  border: 10px solid black;
+  background-color:white;
+  color: black;
+  padding: 40px 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color:lightgrey;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.info:hover {
+  background: lightgrey;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: lightgrey;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: lightgrey;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: lightgrey;
+}
+    
+</style>
+        
 	</head>
 	
 	
@@ -23,11 +91,10 @@
     <nav class="navbar navbar-default">
     <div class="container-fluid">
     <div class="navbar-header">
-     <a class="navbar-brand" href="lamanutama.php">LAMAN UTAMA</a>
+     <a class="navbar-brand" href="semakanrumah.php">LAMAN UTAMA</a>
     </div>
     
-      <ul class="nav navbar-nav">
-      <li><a href="semakanrumah.php">SEMAKAN RUMAH</a></li>
+           <ul class="nav navbar-nav">
       <li><a href="pelawat.php">PELAWAT</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -37,7 +104,7 @@
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="button ">Submit</button>
     </form>
     </div>
     </nav>
@@ -56,48 +123,17 @@
                     <div class="container">
   <h2>SEMAKAN DATA PENDUDUK</h2>
   <p>Semakan data penduduk bagi</p>
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      BLOK A <span class="caret"></span></button>
-      <ul class="dropdown-menu" role="menu">
-        			    <li><a class="dropdown-item" href="aras1_2_3.php">Aras 1-3</a></li>
-                        <li><a class="dropdown-item" href="aras4_5_6.php">Aras 4-6</a></li>
-                        
-                        
-      </ul>
-    </div>
-     <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      BLOK B <span class="caret"></span></button>
-      <ul class="dropdown-menu" role="menu">
-        			   <li><a class="dropdown-item" href="blokbaras1_2_3.php">Aras 1-3</a></li>
-                        <li><a class="dropdown-item" href="blokbaras4_5_6.php">Aras 4-6</a></li>
-                        
-                     
-      </ul>
-    </div>
+    <button class="btn success" onClick="location.href='ba11.php'">BLOK A</button>
+    <button class="btn info" onClick="location.href='blokbaras1_2_3.php'">BLOK B</button>
+    <br>
+    <br>
+    <button class="btn warning" onClick="location.href='blokcaras1_2_3.php'">BLOK C</button>
+    <button class="btn danger" onClick="location.href='blockd1_2_3.php'">BLOK D</button>
+
     
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      BLOK C <span class="caret"></span></button>
-      <ul class="dropdown-menu" role="menu">
-        			   <li><a class="dropdown-item" href="blokcaras1_2_3.php">Aras 1-3</a></li>
-                        <li><a class="dropdown-item" href="blokcaras4_5_6.php">Aras 4-6</a></li>
-                        
-      </ul> 
-    </div>
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      BLOK D <span class="caret"></span></button>
-      <ul class="dropdown-menu" role="menu">
-                          <li><a class="dropdown-item" href="blockd1_2_3.php">Aras 1-3</a></li>
-                        <li><a class="dropdown-item" href="blockd4_5_6.php">Aras 4-6</a></li>
-                        
-        			     
-                       
-                        
-      </ul>
-    </div>
+    
+    
+    
     </div>
   </div>
                    

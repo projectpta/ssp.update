@@ -1,12 +1,12 @@
 <?php
 
-    $con = mysqli_connect('localhost','root','');
+    $connection = mysqli_connect('localhost','root','');
 
-if(!$con)
+if(!$connection)
 {   
     echo 'not connected to server';
 }
- if(!mysqli_select_db($con, 'condo'))
+ if(!mysqli_select_db($connection, 'condo'))
      
  {
      echo 'DATABASE NOT SELECTED';
@@ -30,7 +30,7 @@ if (empty($_POST) === false) {
         $sql = "INSERT INTO visitor (nama,ic,no_tel,kenderaan,no_plat,tujuan) 
     VALUES ('$nama','$ic','$no_tel','$kenderaan','$no_plat','$tujuan')";
 
-         if(mysqli_query($con,$sql))
+         if(mysqli_query($connection,$sql))
          {
              echo 'Inserted';
          }

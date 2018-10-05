@@ -1,4 +1,4 @@
-<?php require_once 'db.php'; ?>
+<?php require_once '../db.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,8 +23,7 @@
     </div>
     
       <ul class="nav navbar-nav">
-      <li><a href="addguard.php">SUNTING PENGGUNA</a></li>
-      <li><a href="aduan.php">ADUAN</a></li>
+      <li><a href="pelawat.php">PELAWAT</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li><a href="../index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>

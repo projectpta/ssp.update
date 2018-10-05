@@ -36,7 +36,7 @@ if (empty($_POST) === false) {
 
          if(mysqli_query($con,$sql))
          {
-             echo 'Inserted';
+             echo 'MAKLUMAT PEMILIK BERJAYA DI TAMBAH';
          }
     } else {
         print_r($error);

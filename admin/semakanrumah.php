@@ -101,7 +101,7 @@
       <li><a href="addguard.php">ADUAN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      <li><a href="../index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
     </ul>
      <form class="navbar-form navbar-right" action="/action_page.php">
       <div class="form-group">
